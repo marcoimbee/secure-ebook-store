@@ -19,5 +19,5 @@ English
 The additional configuration steps of the service (if XAMPP is used) can be found in the 'configuration.txt' file.
 
 ## Contributors
-[Niccolò Mulè](https://github.com/null-routed)
+[Niccolò Mulè](https://github.com/null-routed) <br>
 [Nicolò Picchi](https://github.com/NicoUniPi)
