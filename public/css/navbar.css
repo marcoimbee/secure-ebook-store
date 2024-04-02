@@ -1,0 +1,141 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  line-height: 13px;
+  border-bottom: 1px solid black;
+  min-height: 40px;
+}
+
+/* Left-aligned items */
+.nav-left {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  padding: 10px 0;
+}
+
+/* Right-aligned items */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.custom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 13px;
+  line-height: 20px;
+  border-bottom: 1px solid black;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.filter-section {
+  text-align: left;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.sort-section {
+  text-align: right;
+  flex-grow: 1;
+}
+
+.sort-select {
+  appearance: none; /* Removes default browser styling */
+  border: none; /* Removes the border */
+  background: none;
+  font-size: 13px;
+  line-height: 20px;
+  margin-right: 20px;
+  font-weight: 400;
+}
+
+/* Optionally, style the focus state */
+.sort-select:focus {
+  outline: none;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* Removed grid-gap and padding to have no space between cells */
+}
+
+.product-card {
+    border-width: 0 1px 1px 0px;
+    border-style: none solid solid none; /* top right bottom left */
+    display: flex;
+    flex-direction: column; /* Stack the image and info */
+}
+
+.product-image {
+    width: 100%; /* Ensure the image takes up the full width of the card */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.product-info {
+    text-align: left; /* Align text to the left */
+    padding: 8px; /* Padding inside the card */
+}
+
+.author-name, .book-title, .book-price {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0; /* Remove default margin for p and h3 */
+}
+
+.product-card:hover {
+    cursor: pointer;
+}
+
+.product-card:hover .author-name,
+.product-card:hover .book-title {
+    text-decoration: underline;
+}
+
+.author-name {
+    text-transform: uppercase;
+}
+
+#searchBarContainer {
+  width: 100%; /* As wide as the page */
+  border-bottom: 1px solid black; /* Bottom border */
+}
+
+#searchInput {
+  width: 100%; /* Full width of the container */
+  padding: 10px 10px 10px 20px; /* Some padding for aesthetics */
+  font-size: 15px; /* Font size as specified */
+  border: none; /* No border */
+  outline: none; /* Removes the blue highlight border on focus */
+}
+
+#order-header {
+  border-top: 1px solid black;
+  margin-top: 5px;
+}

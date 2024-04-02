@@ -1,0 +1,25 @@
+.order-card {
+  border-bottom: 1px black solid;
+  padding: 10px;
+  cursor: pointer; 
+  text-decoration: none;
+  color: black; 
+}
+
+.no-orders {
+  text-align: center;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color:black
+}
+
+.order-id {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,34 @@
+.message-box {
+    height: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    background: white;
+    color: black;
+    text-align: center;
+}
+
+.error-message {
+    font-size: 5em;
+}
+
+.home-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+}
+
+.home-button:hover {
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    color: white;
+    background-color: black;
+}

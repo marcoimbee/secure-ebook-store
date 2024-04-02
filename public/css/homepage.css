@@ -1,0 +1,96 @@
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 13px;
+    line-height: 20px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .filter-section {
+    text-align: left;
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  
+  .sort-section {
+    text-align: right;
+    flex-grow: 1;
+  }
+  
+  .sort-select {
+    appearance: none; 
+    border: none;
+    background: none;
+    font-size: 13px;
+    line-height: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+  }
+  
+  .sort-select:focus {
+    outline: none;
+  }
+  .product-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .product-card {
+      border-width: 0 1px 1px 0px;
+      border-style: none solid solid none; 
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .product-image {
+      width: 100%;
+      height: auto; 
+  }
+  
+  .product-info {
+      text-align: left; 
+      padding: 8px; 
+  }
+
+  .author-name, .book-title, .book-price {
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0; 
+  }
+  
+  .product-card:hover {
+      cursor: pointer;
+  }
+  
+  .product-card:hover .author-name,
+  .product-card:hover .book-title {
+      text-decoration: underline;
+  }
+  
+  .author-name {
+      text-transform: uppercase;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+      .product-grid {
+          grid-template-columns: repeat(4, 1fr);
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .product-grid {
+          grid-template-columns: repeat(2, 1fr);
+      }
+  }
+  
