@@ -1,7 +1,7 @@
 import requests
 
 cookies = {
-    'PHPSESSID': 'd6b903fgvlnv1mfrenv8s915v2',
+    'PHPSESSID': '<php session ID here>',
 }
 
 headers = {
@@ -24,6 +24,7 @@ headers = {
     'sec-ch-ua-platform': '"macOS"',
 }
 
+# test data, wrong on purpose
 data = {
     'username': 'a@gmail.com',
     'password': 'Abcde11@lasdsa23',
